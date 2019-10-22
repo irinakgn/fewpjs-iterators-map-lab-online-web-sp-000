@@ -23,4 +23,6 @@ const titleCased = () => {
     .join(' ');
 
   res.push(sent)
+
+  return res;
 };
