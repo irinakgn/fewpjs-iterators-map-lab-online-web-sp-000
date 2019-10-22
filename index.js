@@ -16,13 +16,11 @@ const tutorials = [
   //return tutorials
 //}
 
-function titleCase(tutorials) {
- var splitStr = tutorials.split(' ');
- for (var i = 0; i < splitStr.length; i++) {
-   if (splitStr.length[i] < splitStr.length) {
-     splitStr[i].charAt(0).toUpperCase();
-   }
-      tutorials = splitStr.join(' ');
- }
-return tutorials;
-}
+const titleCased = (tutorials) => {
+  return tutorials
+    .split(' ')
+    .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+    .join(' ');
+};
+
+
