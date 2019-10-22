@@ -23,11 +23,11 @@ const titleCased = () => {
     // map of sentence
       // upper case
   for(let i = 0; i < tutorials.length; i++){
-  const sent =  tutorials[0].split(' ')
+    const sent =  tutorials[i].split(' ')
     .map(word => word.charAt(0).toUpperCase() + word.slice(1))
     .join(' ');
 
-  res.push(sent)
-}
+    res.push(sent)
+  }
   return res;
 };
